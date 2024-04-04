@@ -2,7 +2,7 @@
 title: Test Page 1
 description: Testing HTML
 published: true
-date: 2024-04-04T17:29:50.508Z
+date: 2024-04-04T17:32:00.567Z
 tags: 
 editor: code
 dateCreated: 2024-04-04T17:28:16.599Z
@@ -14,29 +14,12 @@ dateCreated: 2024-04-04T17:28:16.599Z
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Page 1</title>
-    <style>
-        .pin-container:hover {
-            color: #f0f0f0;
-            cursor: pointer;
-        }
-    </style>
 </head>
-<body onload="generatePIN()">
+<body>
     <h1>Test Page 1</h1>
     <p>This is a test page for testing HTML in Wiki.js.</p>
     <div class="pin-container" onclick="generatePIN()">
         <p>Random 6-character PIN: <span id="pin"></span></p>
     </div>
-
-    <script>
-        function generatePIN() {
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-            let pin = '';
-            for (let i = 0; i < 6; i++) {
-                pin += characters.charAt(Math.floor(Math.random() * characters.length));
-            }
-            document.getElementById('pin').textContent = pin;
-        }
-    </script>
 </body>
 </html>
